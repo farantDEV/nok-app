@@ -1,12 +1,12 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Grayscale', // <title>
-  manifestName: 'Grayscale',
+  siteTitle: 'NoK-sd', // <title>
+  manifestName: 'NOK',
   manifestShortName: 'Landing', // max 12 characters
-  manifestStartUrl: '/',
+  manifestStartUrl: '/update/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/img/nokIcon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Anubhav Srivastava',
   subHeading: 'Full time Web Developer. Part time Open source contributor  ',
