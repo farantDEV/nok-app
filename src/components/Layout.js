@@ -24,11 +24,11 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Grayscale' },
-                { name: 'keywords', content: 'site, web' },
+                { name: 'description', content: 'NOK-sd' },
+                { name: 'keywords', content: 'site, web, static, gatsby' },
               ]}
             >
-              <html lang="en" />
+              <html lang="fr" />
             </Helmet>
             <div className={'page-top'}>{children}</div>
           </>
