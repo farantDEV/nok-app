@@ -1,5 +1,6 @@
 module.exports = {
   siteTitle: 'NoK-sd', // <title>
+  siteLogo: 'src/assets/img/nok-logo.svg',
   manifestName: 'NOK',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/update/',

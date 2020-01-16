@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
+import logo from '../assets/img/nok-logo.svg'
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -40,9 +41,8 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
-          </a>
+          <img className="navbar-brand" src= {logo} alt= {config.siteTitle} />
+          
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
