@@ -13,7 +13,7 @@ import ipad from '../assets/images/ipad.png';
 import demoImage1 from '../assets/images/demo-image-01.jpg';
 import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
-
+import uxUi from '../assets/images/ux-ui.svg'
 
 const IndexPage = () => (
   <Layout>
@@ -21,17 +21,18 @@ const IndexPage = () => (
 
     <header className="masthead">
       <div className="container d-flex h-100 align-items-center">
-        <div className="mx-auto text-center">
+        <div className="w-50 mx-auto text-center">
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-          <h2 className="text-white-50 mx-auto mt-2 mb-5">
+          <h2 className="text-black-50 mx-auto mt-2 mb-5">
             {config.subHeading}
           </h2>
           <Scroll type="id" element="about">
-            <a href="#about" className="btn btn-primary">
+            <a href="#about" className="btn btn-about">
               About
             </a>
           </Scroll>
         </div>
+        <div className="w-50"><img src={uxUi} className="img-fluid " alt="" /></div>
       </div>
     </header>
 

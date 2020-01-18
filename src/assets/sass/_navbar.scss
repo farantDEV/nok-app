@@ -11,14 +11,14 @@
     }
   }
   .navbar-brand {
-    color: $black;
-    font-weight: 700;
+
     padding: .9rem 0;
+    height: 65px;
   }
   .navbar-nav {
     .nav-item {
       &:hover {
-        color: fade(white, 80%);
+        color: fade(black, 80%);
         outline: none;
         background-color: transparent;
       }
@@ -37,17 +37,17 @@
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
       padding: .5rem 0;
-      color: fade-out($white, .5);
+      color: fade-out($black, .5);
     }
     .nav-link {
       transition: none;
       padding: 2rem 1.5rem;
-      color: fade-out($white, .5);
+      color: fade-out($black, .5);
       &:hover {
-        color: fade-out($white, .25);
+        color: fade-out($black, .25);
       }
       &:active {
-        color: white;
+        color: black;
       }
     }
     &.navbar-shrink {

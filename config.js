@@ -9,8 +9,8 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/nokIcon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  heading: 'Front End Development',
+  subHeading: 'Offrez de nouveaux services et une meilleure expérience à vos utilisateurs et clients',
 
   // social
   socialLinks: [

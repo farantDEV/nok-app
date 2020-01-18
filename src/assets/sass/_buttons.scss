@@ -2,22 +2,27 @@
   box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
-  font-size: 80%;
+  font-size: 100%;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+  border-radius: 60%;
 }
 
-.btn-primary {
-  background-color: $primary;
+.btn-about {
+  background-color: #00ffff; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, hsl(180, 100%, 50%), #00b4ff); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(top, hsl(180, 100%, 50%), #00b4ff); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(top, hsl(180, 100%, 50%), #00b4ff); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to bottom, hsl(180, 100%, 50%), #00b4ff); /* Standard syntax; must be last */
   &:hover {
-    background-color: darken($primary, 10%);
+    background-color: ($gradient, 10%);
   }
   &:focus {
-    background-color: darken($primary, 10%);
+    background-color: ($gradient, 10%);
     color: white;
   }
   &:active {
-    background-color: darken($primary, 15%) !important;
+    background-color: ($gradient, 15%) !important;
   }
 }
