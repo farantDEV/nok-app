@@ -60,7 +60,7 @@ export default class Header extends Component {
             className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav">
               <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}

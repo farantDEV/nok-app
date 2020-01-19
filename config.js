@@ -10,7 +10,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/nokIcon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Front End Development',
-  subHeading: 'Offrez de nouveaux services et une meilleure expérience à vos utilisateurs et clients',
+  subHeading: 'Offrez de nouveaux services et une meilleure expérience à vos utilisateurs et clients.',
 
   // social
   socialLinks: [

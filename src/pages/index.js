@@ -20,8 +20,8 @@ const IndexPage = () => (
     <Header />
 
     <header className="masthead">
-      <div className="container d-flex h-100 align-items-center">
-        <div className="w-50 mx-auto text-center">
+      <div className="container d-flex h-100 align-items-center home-cont">
+        <div className="mx-auto text-center home-txt">
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
           <h2 className="text-black-50 mx-auto mt-2 mb-5">
             {config.subHeading}
@@ -32,7 +32,7 @@ const IndexPage = () => (
             </a>
           </Scroll>
         </div>
-        <div className="w-50"><img src={uxUi} className="img-fluid " alt="" /></div>
+        <div className="home-img"><img src={uxUi} className="img-fluid " alt="" /></div>
       </div>
     </header>
 
