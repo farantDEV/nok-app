@@ -11,10 +11,10 @@ export default function Subscribe() {
 
             <form className="contact form-inline d-flex" method="post" data-netlify="true" data-netlify-honeypota="bot-field">
               <input type="hidden" className="bot-field"/>
-              <input type="hidden" className="form-contact" value="contact"/>
+              <input type="hidden" className="form-name" value="contact"/>
               <input
                 type="email"
-                className=" flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
+                className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
                 id="inputEmail"
                 placeholder="Votre adresse email..."
               />
