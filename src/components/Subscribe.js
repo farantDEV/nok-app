@@ -9,13 +9,14 @@ export default function Subscribe() {
             <i className="fas fa-mug-hot fa-2x mb-2 text-white"></i>
             <h2 className="text-white mb-5">Nous serions enchanté de vous renconter !</h2>
 
-            <form className="contact form-inline d-flex" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form className="contact form-inline d-flex" method="post" data-netlify="true" data-netlify-recaptcha="bot-field">
               <input
                 type="email"
                 className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
                 id="inputEmail"
                 placeholder="Votre adresse email..."
               />
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit" className="btn btn-about mx-auto">
                 Inscription
               </button>
