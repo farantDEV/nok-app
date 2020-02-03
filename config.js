@@ -9,33 +9,24 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/nokIcon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Front-end Développement',
-  subHeading: 'Découvrir la JAMstack par la pratique',
+  heading: '1er pas dans la JAMSTACK',
+  subHeading: 'Apprendre de nouvelles technologies de développement front-end par la pratique',
 
   // social
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/farantDEV',
     },
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://linkedin.com/in/farant-dev/',
     },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook-f',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
-    },
+    
   ],
-  email: 'anubhav.srivastava00@gmail.com',
-  phone: '000-00000',
-  address: '305 Del Sol, Sunnyvale, CA',
+  email: 'farant.cdp@gmail.com',
+  phone: '+33651-571-733',
+  address: 'Evry (91)->Toulouse (31)',
 };

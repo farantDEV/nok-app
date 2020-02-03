@@ -15,7 +15,7 @@ const IndexPage = () => (
   <Layout>
     <Header />
 
-    <header className="masthead">
+    <header id="Home" className="masthead">
       <div className="container d-flex h-100 align-items-center home-cont">
         <div className="mx-auto text-center home-txt">
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
@@ -24,7 +24,7 @@ const IndexPage = () => (
           </h2>
           <Scroll type="id" element="about">
             <a href="#about" className="btn btn-about">
-              About
+              Départ !
             </a>
           </Scroll>
         </div>
@@ -38,10 +38,22 @@ const IndexPage = () => (
           <div className="col-lg-8 mx-auto">
             <h2 className="text-white mb-4">A propos</h2>
             <p className="text-white-50">
-             Ce site me permet de tester par la pratique de nouvelles technologie de développement web. Des modifications y seront 
-             apporté en fonction de mes apprentissages et de mes diponibilités.<br/> Si vous souhaitez en savoir plus sur la JAMstack, je vous invite à visiter
-             ce lien.<br/>
-             L.Farant   
+              Je suis un développeur web, passionné de nouvelles technologies. Ce site me permet de tester de nouveaux outils front-end.<br/> 
+              Des modifications seront amenés régulièrement sur le site. Vous pouvez si vous le souhaitez suivre ces évolutions en vous inscrivant <a href="#signup">ici</a>.<br/>
+              <br/>
+              Pour en savoir plus sur la Jamstack et Gatsby, je vous invite à visiter les sites suivants:<br/>
+              <br/>
+              <ul>
+                <li><a href="https://jamstack.wtf/" rel="noopener">Jamstack WTF!</a></li>
+                <li><a href="https://www.gatsbyjs.org/" rel="noopener">Gatsby.js</a></li>
+              </ul> 
+              <br/>
+              </p>
+              <p className="txt-mini">
+
+             Ce site utilise le strater gatsby <a href="https://www.gatsbyjs.org/starters/anubhavsrivastava/gatsby-starter-grayscale/"> grayscale</a>.
+             Dévellopé par <a href="https://github.com/anubhavsrivastava">Anubhav Srivastava</a><br/>
+             Date de mise en ligne de la v1.0: 2020.2.3   
               
             </p>
           </div>
@@ -49,7 +61,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="projects" className="projects-section bg-light">
+    <section id="benefices" className="projects-section bg-light">
       <div className="container">
       <div className="row justify-content-center no-gutters">
           <div className="col-lg-6 text-center my-auto">

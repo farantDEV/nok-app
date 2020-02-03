@@ -6,18 +6,18 @@ export default function Subscribe() {
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-lg-8 mx-auto text-center">
-            <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
+            <i className="fas fa-mug-hot fa-2x mb-2 text-white"></i>
+            <h2 className="text-white mb-5">Nous serions enchanté de vous renconter !</h2>
 
-            <form className="form-inline d-flex">
+            <form className="contact form-inline d-flex" data-netlify="true" data-netlify-honeypot="bot-field">
               <input
                 type="email"
                 className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
                 id="inputEmail"
-                placeholder="Enter email address..."
+                placeholder="Votre adresse email..."
               />
-              <button type="submit" className="btn btn-primary mx-auto">
-                Subscribe
+              <button type="submit" className="btn btn-about mx-auto">
+                Inscription
               </button>
             </form>
           </div>
