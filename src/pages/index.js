@@ -63,6 +63,7 @@ const IndexPage = () => (
 
     <section id="benefices" className="projects-section bg-light">
       <div className="container">
+      <h2 className="text-black mb-4">Bénéfices</h2>
       <div className="row justify-content-center no-gutters">
           <div className="col-lg-6 text-center my-auto">
             <i className="fas fa-shield-alt fa-10x"></i>

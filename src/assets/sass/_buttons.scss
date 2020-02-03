@@ -27,4 +27,21 @@
   &:active {
     background-color: ($gradient, 15%) !important;
   }
+  
+}
+.btn-contact {
+  background-color: $primary; /* fallback color if gradients are not supported */
+  
+  &:hover {
+    background-color: ($primary, 10%);
+   
+  }
+  &:focus {
+    background-color: ($primary, 10%);
+    color: white;
+  }
+  &:active {
+    background-color: ($primary, 15%) !important;
+  }
+  
 }
