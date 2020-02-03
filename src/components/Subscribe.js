@@ -14,7 +14,7 @@ export default function Subscribe() {
               <input type="hidden" className="form-contact" value="contact"/>
               <input
                 type="email"
-                className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
+                className=" flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
                 id="inputEmail"
                 placeholder="Votre adresse email..."
               />
