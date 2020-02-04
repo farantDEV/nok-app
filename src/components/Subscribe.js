@@ -15,7 +15,7 @@ export default function Subscribe() {
               <div className="w-75">
                 <input
                   type="email"
-                  className="form-control mr-0 mr-sm-2 mb-3 mb-sm-0 w-100"
+                  className="form-control mr-0 mr-sm-2 mb-3 mb-sm-0 w-100 mx-auto"
                   id="inputEmail"
                   placeholder="Votre adresse email..."
                 />

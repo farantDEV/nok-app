@@ -6,5 +6,10 @@
       #{fade-out($black, 0.5)} 75%,
       $black 100%
     ),
-  
+}
+.w-75{
+  margin-left: 13%;
+  @media (min-width: 992px){
+    margin-left: auto;
+  }
 }
