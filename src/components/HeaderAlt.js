@@ -63,26 +63,10 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="about"
-                >
-                  <a className="nav-link" href="#about">
-                    A propos
-                  </a>
-                </Scroll>
+                <Link to="/#about" className="nav-link">A propos</Link>
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="benefices"
-                >
-                  <a className="nav-link" href="#benefices">
-                    Avantages
-                  </a>
-                </Scroll>
+                <Link to="/#benefices" className="nav-link">Avantages</Link>
               </li>
               <li className="nav-item">
                 
@@ -90,15 +74,7 @@ export default class Header extends Component {
                
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="signup"
-                >
-                  <a className="nav-link" href="#signup">
-                    Contact
-                  </a>
-                </Scroll>
+                <Link to="/#signup" className="nav-link">Contact</Link>
               </li>
             </ul>
           </div>
