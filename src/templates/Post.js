@@ -1,47 +1,45 @@
 import React, { Component } from "react"
-import { graphql } from "gatsby"
-import PropTypes from "prop-types"
+import {graphql} from "gatsby"
 import Layout from "../components/Layout"
-import Header from "../components/Header"
+import Header from "../components/HeaderAlt"
 import Footer from "../components/Footer"
 
-class Post extends Component {
-  render() {
-    const post = this.props.data.wordpressPost
 
-    return (
-      <>
-        <Layout>
-          <Header />
+class PostTemplate extends Component {
+    render() {
+        const post = this.props.data.wordpressPost
 
-          <h1>{post.title}</h1>
-          <div>{post.content}</div>
-
-          <Footer />
-        </Layout>
-      </>
-    )
-  }
+        return (
+            <Layout>
+                <Header />
+                <section id="Post" className="projects-section bg-light">
+                    <div className="container">
+                        <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+                        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                        <p dangerouslySetInnerHTML={{__html: post.date}} />
+                    </div>
+                </section>
+                <Footer />
+            </Layout>
+        )
+    }
 }
 
-Post.propTypes = {
-  data: PropTypes.object.isRequired,
-  edges: PropTypes.array,
-}
 
-export default Post
+export default PostTemplate
 
-export const postQuery = graphql`
-  query($id: String!) {
-    wordpressPost(id: { eq: $id }) {
-      title
-      content
+export const pageQuery = graphql`
+    query currentPostQuery($id: String!) {
+        wordpressPost(id: { eq: $id }) {
+            title
+            content
+            date(formatString: "DD MMMM, YYYY")
+        }
+        site {
+            siteMetadata {
+                title
+                subtitle
+            }
+        }
     }
-    site {
-      siteMetadata {
-        title
-        
-      }
-    }
-  }
 `

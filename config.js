@@ -8,7 +8,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/nokIcon.png',
-  pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/Playground/`, // This path is subpath of your hosting https://domain/portfolio
   heading: '1er pas dans la JAMSTACK',
   subHeading: 'Apprendre de nouvelles technologies de développement front-end par la pratique',
 

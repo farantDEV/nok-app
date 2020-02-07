@@ -4,6 +4,7 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
+    subtitle: 'Apprendre en pratiquant',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -28,8 +29,14 @@ module.exports = {
         // is it hosted on wordpress.com, or self-hosted?
         hostingWPCOM: false,
         // does your site use the Advanced Custom Fields Plugin?
-        useACF: false
+        useACF: true
       }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve('./src/components/Layout.js'),
+      },
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby";
-import Scroll from './Scroll';
+
 import config from '../../config';
 import logo from '../assets/img/nok-logo.svg'
 export default class Header extends Component {
@@ -63,18 +63,14 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/#about" className="nav-link">A propos</Link>
+                <a href="/" className="nav-link">Accueil</a>
+              </li>
+              
+              <li className="nav-item">
+                <a href="/blog/" className="nav-link">Blog</a>
               </li>
               <li className="nav-item">
-                <Link to="/#benefices" className="nav-link">Avantages</Link>
-              </li>
-              <li className="nav-item">
-                
-                  <Link to="/articles/" className="nav-link">Blog</Link>
-               
-              </li>
-              <li className="nav-item">
-                <Link to="/#signup" className="nav-link">Contact</Link>
+                <a href="/" className="nav-link">Contact</a>
               </li>
             </ul>
           </div>

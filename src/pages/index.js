@@ -22,8 +22,8 @@ const IndexPage = () => (
           <h2 className="text-black-50 mx-auto mt-2 mb-5">
             {config.subHeading}
           </h2>
-          <Scroll type="id" element="about">
-            <a href="#about" className="btn btn-about">
+          <Scroll type="id" element="about" >
+            <a href="#about" className="btn btn-about" role="button" tabIndex={0}>
               Départ !
             </a>
           </Scroll>
@@ -43,12 +43,13 @@ const IndexPage = () => (
               <br/>
               Pour en savoir plus sur la Jamstack et Gatsby, je vous invite à visiter les sites suivants:<br/>
               <br/>
+              </p>
               <ul>
                 <li><a href="https://jamstack.wtf/" rel="noopener">Jamstack WTF!</a></li>
                 <li><a href="https://www.gatsbyjs.org/" rel="noopener">Gatsby.js</a></li>
               </ul> 
               <br/>
-              </p>
+              
               <p className="txt-mini">
 
              Ce site utilise le strater gatsby <a href="https://www.gatsbyjs.org/starters/anubhavsrivastava/gatsby-starter-grayscale/"> grayscale</a>.

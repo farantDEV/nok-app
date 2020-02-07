@@ -1,41 +1,50 @@
-import React, { Component } from "react"
-import { graphql } from "gatsby"
+import React, {Component} from "react"
+import {graphql} from "gatsby"
 import Layout from "../components/Layout"
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-class Page extends Component {
-  render() {
-    const StaticPage = this.props.data.wordpressPage
+class PageTemplate extends Component {
+    render() {
+        
+        const currentPage = this.props.data.wordpressPage
 
-    return (
-      <>
-        <Layout>
-          <Header />
+        
+        return (
+            <Layout>
+                <Header />
+                <section id="Page" className="projects-section bg-light">
+                    <div className="container">
+                        <h1 dangerouslySetInnerHTML={{__html: currentPage.title}}/>
+                        <div dangerouslySetInnerHTML={{__html: currentPage.content}}/>
 
-          <h1>{StaticPage.title}</h1>
-          <div>{StaticPage.content}</div>
-          <Footer />
-        </Layout>
-      </>
-    )
-  }
+                        <p dangerouslySetInnerHTML={{__html: currentPage.date}} />
+                        <p dangerouslySetInnerHTML={{__html: currentPage.slug}} />
+                    </div>
+                </section>
+                <Footer />
+            </Layout>
+        )
+    }
 }
 
-export default Page
+export default PageTemplate
 
 export const pageQuery = graphql`
-  query($id: String!) {
-    wordpressPage(id: { eq: $id }) {
-      title
-      content
+    query currentPageQuery($id: String!) {
+        wordpressPage(id: { eq: $id }) {
+            title
+            content
+            slug
+            id
+            date(formatString: "MMMM DD, YYYY")
+        }
+        site {
+            id
+            siteMetadata {
+                title
+                subtitle
+            }
+        }
     }
-    site {
-      id
-      siteMetadata {
-        title
-        
-      }
-    }
-  }
 `
