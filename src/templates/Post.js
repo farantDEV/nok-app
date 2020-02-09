@@ -3,11 +3,13 @@ import {graphql} from "gatsby"
 import Layout from "../components/Layout"
 import Header from "../components/HeaderAlt"
 import Footer from "../components/Footer"
+import Img from "gatsby-image"
 
 
 class PostTemplate extends Component {
     render() {
         const post = this.props.data.wordpressPost
+        const fixed = post.featured_media.localFile.childImageSharp.fixed
 
         return (
             <Layout>
@@ -15,6 +17,12 @@ class PostTemplate extends Component {
                 <section id="Post" className="projects-section bg-light">
                     <div className="container">
                         <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+                        {fixed &&
+                            <div>
+                                <Img fixed={fixed}/>
+                                < img src={fixed.src} alt=""/>
+                            </div>
+                        }
                         <div dangerouslySetInnerHTML={{ __html: post.content }} />
                         <p dangerouslySetInnerHTML={{__html: post.date}} />
                     </div>
@@ -33,7 +41,18 @@ export const pageQuery = graphql`
         wordpressPost(id: { eq: $id }) {
             title
             content
-            date(formatString: "DD MMMM, YYYY")
+            
+            featured_media{
+                localFile{
+                    childImageSharp{
+                        fixed(width:500, height: 200){
+                            src
+                            width
+                            height
+                        }
+                    }
+                }
+            }
         }
         site {
             siteMetadata {

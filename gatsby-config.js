@@ -7,6 +7,8 @@ module.exports = {
     subtitle: 'Apprendre en pratiquant',
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
